@@ -17,8 +17,8 @@ Was the GetMaxQuantity() procedure properly implemented?
     For SQL clause consult "procedures.sql".
     For example result consult "getMaxQtyProc.png".
 Was the ManageBooking() procedure properly implemented?
-    The procedure name was different on the exercise page. I assume it means "CheckBooking" procedure.
-    For SQL clause consult "CheckBookingProc.sql".
+    The procedure name was different on the exercise page. I assume it means "AddValidBooking" procedure.
+    For SQL clause consult "BookingSys.sql".
 Was the UpdateBooking() procedure properly implemented?
     For SQL clause consult "BookingSys2.sql".
 Was the AddBooking() procedure properly implemented?
@@ -42,3 +42,7 @@ Customer_Sales.PNG
 dashboard.PNG
 Profit_Chart.PNG
 sales_bubble_char.PNG
+
+Python client
+
+Use "Client.ipynb"
