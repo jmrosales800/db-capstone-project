@@ -30,7 +30,7 @@ CREATE TABLE `Bookings` (
   PRIMARY KEY (`BookingID`),
   KEY `fk_Bookings_Customers1_idx` (`CustomerID`),
   CONSTRAINT `fk_Bookings_Customers1` FOREIGN KEY (`CustomerID`) REFERENCES `Customers` (`CustomerID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `Bookings` (
 
 LOCK TABLES `Bookings` WRITE;
 /*!40000 ALTER TABLE `Bookings` DISABLE KEYS */;
-INSERT INTO `Bookings` VALUES (1,12,'2023-06-01',1),(2,12,'2023-06-02',2),(3,19,'2023-06-03',3),(4,15,'2023-06-04',4),(5,5,'2023-06-05',5),(6,8,'2023-06-06',6),(7,8,'2023-06-07',7),(8,5,'2023-06-08',8),(10,5,'2022-10-10',1),(11,3,'2022-11-12',3),(12,2,'2022-10-11',2),(13,2,'2022-10-13',1),(14,4,'2022-12-30',3);
+INSERT INTO `Bookings` VALUES (1,12,'2023-06-01',1),(2,12,'2023-06-02',2),(3,19,'2023-06-03',3),(4,15,'2023-06-04',4),(5,5,'2023-06-05',5),(6,8,'2023-06-06',6),(7,8,'2023-06-07',7),(8,5,'2023-06-08',8),(10,5,'2022-10-10',1),(11,3,'2022-11-12',3),(12,2,'2022-10-11',2),(13,2,'2022-10-13',1),(14,4,'2022-12-30',3),(16,3,'2022-10-13',1);
 /*!40000 ALTER TABLE `Bookings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +64,7 @@ CREATE TABLE `Customers` (
 
 LOCK TABLES `Customers` WRITE;
 /*!40000 ALTER TABLE `Customers` DISABLE KEYS */;
-INSERT INTO `Customers` VALUES (1,'Ana Iversen','582938472983'),(2,'Joakim Iversen','482938472938'),(3,'Vanessa McCarthy','384721938471'),(4,'Marcos Romero','38472938473'),(5,'Hiroki Yamane','1239472934'),(6,'Diana Pinto','2938401994'),(7,'Anees Java','2947203947'),(8,'Bald Vin','2384713987'),(9,'Jay Kon','9456293884');
+INSERT INTO `Customers` VALUES (1,'Ana Iversen','582938472983'),(2,'Joakim Iversen','482938472938'),(3,'Vanessa McCarthy','384721938471'),(4,'Marcos Romero','38472938473'),(5,'Hiroki Yamane','1239472934'),(6,'Diana Pinto','2938401994'),(7,'Anees Java','2947203947'),(8,'Bald Vin','2384713987'),(9,'Jay Kon','9456293884'),(99,'John Doe','7382038499');
 /*!40000 ALTER TABLE `Customers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -316,4 +316,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-13  8:34:46
+-- Dump completed on 2023-07-14 15:34:13
